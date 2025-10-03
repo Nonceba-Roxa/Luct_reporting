@@ -1,0 +1,14 @@
+{
+  "name": "luct-reporting",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:client",
+    "build:client": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
